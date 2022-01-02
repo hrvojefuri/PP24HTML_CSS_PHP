@@ -1,6 +1,6 @@
 <?php
 
 // deklaracija varijable
-$naslovAPP='Grupa PP24';
+$naslovAPP='PP24 zadace';
 
 $var='PHP tutorial';

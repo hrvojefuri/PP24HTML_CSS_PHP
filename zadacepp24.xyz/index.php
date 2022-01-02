@@ -10,10 +10,8 @@
         <div class="large-12 cell">
           <div class="callout">
             <h1>
-              Dobrodošli
-            </h1>
-            Domaća zadaća:<br />
-            Isto ovo mrežno mjesto napraviti koristeći Bootstap
+              Stranica s PHP vježbama
+            </h1>           
           </div>
         </div>
       </div>
