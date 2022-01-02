@@ -30,6 +30,12 @@
             <li><a target="_blank" href="whilepetlja.php">While petlja</a></li>
             <li><a target="_blank" href="program2.php">2. program</a></li>
           </ul>
+          <li>
+          <a href="#">Zadace w3resource</a>
+          <ul class="menu vertical">
+          <li><a target="_blank" href="zadaca1.php">Zadaca1</a></li>
+          </ul>
+        </li>
         </li>
       </ul>
     </div>
