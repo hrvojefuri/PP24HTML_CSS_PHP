@@ -10,9 +10,9 @@
         <li>
         <a href="#">Zadace w3resource php-basic-exercises</a>
           <ul class="menu vertical">
-          <li><a target="_blank" href="zadaca1.php">Zadaca1</a></li>
-          <li><a target="_blank" href="zadaca2.php">Zadaca2</a></li>
-          <li><a target="_blank" href="zadaca3.php">Zadaca3</a></li>
+          <li><a target="_blank" href="zadatak1.php">Zadatak1</a></li>
+          <li><a target="_blank" href="zadatak2.php">Zadatak2</a></li>
+          <li><a target="_blank" href="zadatak3.php">Zadatak3</a></li>
           </ul>
         </li>           
         </li>
