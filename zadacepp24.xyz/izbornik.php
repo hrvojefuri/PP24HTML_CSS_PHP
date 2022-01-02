@@ -13,6 +13,7 @@
           <li><a target="_blank" href="zadatak1.php">Zadatak1</a></li>
           <li><a target="_blank" href="zadatak2.php">Zadatak2</a></li>
           <li><a target="_blank" href="zadatak3.php">Zadatak3</a></li>
+          <li><a target="_blank" href="zadatak4.php">Zadatak4</a></li>
           </ul>
         </li>           
         </li>
