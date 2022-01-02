@@ -35,6 +35,7 @@
           <ul class="menu vertical">
           <li><a target="_blank" href="zadaca1.php">Zadaca1</a></li>
           <li><a target="_blank" href="zadaca2.php">Zadaca2</a></li>
+          <li><a target="_blank" href="zadaca3.php">Zadaca3</a></li>
           </ul>
         </li>
         </li>
