@@ -4,7 +4,7 @@
     <?php include_once 'zaglavlje.php'; ?>
 </head>
 <body>
-    <form action='ciklickamatrica.php' method='get'>
+    <form action="ciklickamatrica.php" method="get">
         Broj redaka: <input type="number" name="brojRedaka"> <br>
         Broj stupaca: <input type="number" name="brojStupaca"><br>
         <input type='submit'>
