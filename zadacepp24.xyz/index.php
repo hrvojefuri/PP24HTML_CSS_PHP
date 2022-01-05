@@ -18,7 +18,19 @@
       </div>
     </div>
 
-    <a class="button success" href="ciklickamatrica.php">Pristupi izradi cikličke matrice</a>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x" id="<?php echo 'pozdrav'; ?>">
+        <div class="large-12 cell">
+          <div class="callout">
+            <a class="button success" href="ciklickamatrica.php">
+            Pristupi izradi cikličke matrice
+            </a>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
     <?php include_once 'podnozje.php' ?>
     <?php include_once 'skripte.php' ?>

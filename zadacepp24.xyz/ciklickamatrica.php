@@ -4,11 +4,11 @@
     <?php include_once 'zaglavlje.php'; ?>
 </head>
 <body>
-    <label>
-        Broj redaka: <input type="number" method="get" name="brojRedaka">
-        Broj stupaca: <input type="number" method="get" name="brojStupaca">
-        submit
-    </label>
+    <form action='ciklickamatrica.php' method='get'>
+        Broj redaka: <input type="number" name="brojRedaka"> <br>
+        Broj stupaca: <input type="number" name="brojStupaca"><br>
+        <input type='submit'>
+    </form>
 
     <?php
         if(isset($_GET['brojRedaka'])){
@@ -22,6 +22,8 @@
         }else {
             echo 'Obavezno unijeti broj stupaca';
         }
+
+        
     ?>
 </body>
 </html>
