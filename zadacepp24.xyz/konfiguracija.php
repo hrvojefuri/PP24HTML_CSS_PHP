@@ -1,4 +1,3 @@
 <?php
 
-// deklaracija varijable
-$naslovAPP='PP24 zadace';
+$naslovAPP = 'Zadaće PP24';
