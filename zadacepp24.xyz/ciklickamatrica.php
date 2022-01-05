@@ -11,7 +11,17 @@
     </label>
 
     <?php
+        if(isset($_GET['brojRedaka'])){
+            $br = $_GET['brojRedaka'];
+        }else{
+            echo 'Obavezno unijeti broj redaka';
+        }
         
+        if(isset($_GET['brojStupaca'])){
+            $bs = $_GET['brojStupaca'];
+        }else {
+            echo 'Obavezno unijeti broj stupaca';
+        }
     ?>
 </body>
 </html>
