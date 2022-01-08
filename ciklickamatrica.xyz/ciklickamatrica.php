@@ -10,7 +10,7 @@
             <form action="ciklickamatrica.php" method="get">
                 Broj redaka: <input type="number" name="brojRedaka">
                 Broj stupaca: <input type="number" name="brojStupaca">
-                <input type="submit" name="Izradi tablicu">
+                <input type="submit" value="Izradi tablicu">
             </form>
         </div>
     </div>
@@ -39,10 +39,10 @@
 
         // koordinate vanjskih točaka matrice
 
-        $xl=$bs;
-        $xd=0;
-        $yg=$br;
-        $yd=0;
+        $xl=0;
+        $xd=$bs;
+        $yg=0;
+        $yd=$br;
 
         // brojač za ispis ćelija
 
@@ -50,40 +50,45 @@
 
         // kreiranje matrice
 
-        $matrica=[];
+       $matrica=[];
 
         while($p <= $bp){
-            for($i=$xd;$i<=$xl;$i++){
+            for($i=$xl;$i>=$xd;$i--){
                 $matrica[$yd][$i] = $p++;
             }
-            $yd++;
+            $yd--;
+            break;
 
-           for($i=$yd;$i<=$yg;$i++){
-                $matrica[$xl][$i] = $p++;
-           }
-           $xl--;
+            for($j=$yg;$j>=$yd;$j--){
+                $matrica[$xl][$j] = $p++;
+            }
+            $xl++;
+            break;
 
-           for($i=$xl;$i<=$xd;$i--){
+            for($i=$xd;$i<=$xd;$i++){
                $matrica[$yg][$i] = $p++;
-           }
-           $yg--;
+            }
+            $yg++;
+            break;
 
-           for($i=$yg;$i<=$yd;$i--){
-               $matrica[$xd][$i] = $p++;
-           }
-           $xd++;
+            for($j=$yg;$j>=$yd;$j++){
+               $matrica[$xd][$j] = $p++;
+            }
+            $xd--;
         }
+        
+        print_r ($matrica);
 
-        echo '<table>';
-        for($i=0;$i<=$br;$i++){
+       /*echo '<table>';
+        for($i=0;$i<$br;$i++){
             echo '<tr>';
-            for($j=0;$j<=$bs;$j++){
+            for($j=0;$j<$bs;$j++){
                 echo '<td>'. $matrica[$i][$j] . '</td>';
             }
             echo '</tr>';
         }
-        echo '</table>'
-        
+        echo '</table>';*/
+
 
         
     ?>
