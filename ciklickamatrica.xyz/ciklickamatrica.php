@@ -71,7 +71,7 @@
             $minr++;
             if ($p <= $bp) break;
 
-            for($j=$minr;$j>=$maxr;$j++){
+            for($j=$minr;$j<=$maxr;$j++){
                $matrica[$j][$maxs] = $p++;
             }
             $maxs--;
