@@ -39,10 +39,10 @@
 
         // koordinate vanjskih točaka matrice
 
-        $xl=0;
-        $xd=$bs;
-        $yg=0;
-        $yd=$br;
+        $minr=0;
+        $mins=0;
+        $maxr=$br;        
+        $maxs=$bs;
 
         // brojač za ispis ćelija
 
@@ -53,33 +53,32 @@
        $matrica=[];
 
         while($p <= $bp){
-            for($i=$xl;$i>=$xd;$i--){
-                $matrica[$yd][$i] = $p++;
+            for($i=$maxss;$i>=$mins;$i--){
+                $matrica[$maxr][$i] = $p++;
             }
-            $yd--;
-            break;
+            $maxr--;
+            if ($p <= $bp) break;
 
-            for($j=$yg;$j>=$yd;$j--){
-                $matrica[$xl][$j] = $p++;
+            for($j=$maxr;$j>=$minr;$j--){
+                $matrica[$j][$mins] = $p++;
             }
-            $xl++;
-            break;
+            $mins++;
+            if ($p <= $bp) break;
 
-            for($i=$xd;$i<=$xd;$i++){
-               $matrica[$yg][$i] = $p++;
+            for($i=$mins;$i<=$maxs;$i++){
+               $matrica[$minr][$i] = $p++;
             }
-            $yg++;
-            break;
+            $minr++;
+            if ($p <= $bp) break;
 
-            for($j=$yg;$j>=$yd;$j++){
-               $matrica[$xd][$j] = $p++;
+            for($j=$minr;$j>=$maxr;$j++){
+               $matrica[$j][$maxs] = $p++;
             }
-            $xd--;
+            $maxs--;
         }
         
-        print_r ($matrica);
-
-       /*echo '<table>';
+              
+       echo '<table>';
         for($i=0;$i<$br;$i++){
             echo '<tr>';
             for($j=0;$j<$bs;$j++){
@@ -87,7 +86,7 @@
             }
             echo '</tr>';
         }
-        echo '</table>';*/
+        echo '</table>';
 
 
         
