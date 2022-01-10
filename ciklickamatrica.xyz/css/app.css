@@ -1,15 +1,30 @@
 body{
-    background-color: gray;    
+    background-color: rgb(63, 63, 63);    
 }
 
-form{
-    margin-top: 250px;
+.form{
+    margin-top: 75px;
+    margin-left: 50px;
     width: 150px;
-    height: 15px;    
+    height: 15px;
+    color: rgb(238, 238, 238);
 }
 
 table{
-    margin-top: 250px;
-    width: 300px;
+    color: rgb(63, 63, 63);
+    margin-left: 350px;
+    width: 500px;
     height: 20px;
+    text-align: center;
+}
+
+td{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(63, 63, 63);
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: rgb(238, 238, 238);
+    /*border-radius: 20px;*/
+    color: rgb(238, 238, 238);
 }

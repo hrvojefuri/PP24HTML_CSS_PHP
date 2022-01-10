@@ -5,15 +5,11 @@
 </head>
 <body>
 
-<div class="container form">
-        <div class="row">
-            <form action="ciklickamatrica.php" method="get">
-                Broj redaka: <input type="number" name="brojRedaka">
-                Broj stupaca: <input type="number" name="brojStupaca">
-                <input type="submit" value="Izradi tablicu">
-            </form>
-        </div>
-    </div>
+    <form class="form" action="ciklickamatrica.php" method="get">
+        Broj redaka: <input type="number" name="brojRedaka">
+        Broj stupaca: <input type="number" name="brojStupaca">
+        <input class="button success" type="submit" value="Izradi tablicu">
+    </form>
 
    <?php
         if(isset($_GET['brojRedaka'])){
