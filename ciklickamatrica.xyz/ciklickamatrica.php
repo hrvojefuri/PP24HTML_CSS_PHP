@@ -53,7 +53,7 @@
        $matrica=[];
 
         while($p <= $bp){
-            for($i=$maxss;$i>=$mins;$i--){
+            for($i=$maxs;$i>=$mins;$i--){
                 $matrica[$maxr][$i] = $p++;
             }
             $maxr--;
