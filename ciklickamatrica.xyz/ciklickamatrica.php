@@ -76,9 +76,9 @@
         
               
        echo '<table>';
-        for($i=0;$i<$br;$i++){
+        for($i=0;$i<=$br;$i++){
             echo '<tr>';
-            for($j=0;$j<$bs;$j++){
+            for($j=0;$j<=$bs;$j++){
                 echo '<td>'. $matrica[$i][$j] . '</td>';
             }
             echo '</tr>';
