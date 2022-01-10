@@ -57,19 +57,19 @@
                 $matrica[$maxr][$i] = $p++;
             }
             $maxr--;
-            if ($p <= $bp) break;
+            //if ($p <= $bp) break;
 
             for($j=$maxr;$j>=$minr;$j--){
                 $matrica[$j][$mins] = $p++;
             }
             $mins++;
-            if ($p <= $bp) break;
+            //if ($p <= $bp) break;
 
             for($i=$mins;$i<=$maxs;$i++){
                $matrica[$minr][$i] = $p++;
             }
             $minr++;
-            if ($p <= $bp) break;
+            //if ($p <= $bp) break;
 
             for($j=$minr;$j<=$maxr;$j++){
                $matrica[$j][$maxs] = $p++;

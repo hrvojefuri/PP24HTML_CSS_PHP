@@ -2,13 +2,14 @@ body{
     background-color: gray;    
 }
 
-.form{
-    margin-top: 350px;
+form{
+    margin-top: 250px;
     width: 150px;
     height: 15px;    
 }
 
-.h1{
-    margin-top: 350px;
-    margin-left: 150px;
+table{
+    margin-top: 250px;
+    width: 300px;
+    height: 20px;
 }
