@@ -10,8 +10,8 @@
       Dobrodošli
     </h1>
 
-    <a class="button success" href="ciklickamatrica.php">
-      Pristupi izradi cikličke matrice
+    <a class="button success" href="ciklickamatrica1.php">
+      Pristupi izradi cikličke matrice u smjeru kazaljke na satu
     </a>
 
     

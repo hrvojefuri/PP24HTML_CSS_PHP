@@ -5,7 +5,7 @@
 </head>
 <body>
 
-    <form class="form" action="ciklickamatrica.php" method="get">
+    <form class="form" action="ciklickamatrica1.php" method="get">
         Broj redaka: <input type="number" name="brojRedaka">
         Broj stupaca: <input type="number" name="brojStupaca">
         <input class="button success" type="submit" value="Izradi tablicu">
@@ -54,15 +54,24 @@
             }
             $maxr--;
 
+            if ($p >= $bp)
+            break;
+
             for($j=$maxr;$j>=$minr;$j--){
                 $matrica[$j][$mins] = $p++;
             }
             $mins++;
 
+            if ($p >= $bp)
+            break;
+
             for($i=$mins;$i<=$maxs;$i++){
                $matrica[$minr][$i] = $p++;
             }
             $minr++;
+
+            if ($p >= $bp)
+            break;
 
             for($j=$minr;$j<=$maxr;$j++){
                $matrica[$j][$maxs] = $p++;
