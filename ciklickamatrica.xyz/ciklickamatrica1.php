@@ -15,13 +15,13 @@
         if(isset($_GET['brojRedaka'])){
             $br = $_GET['brojRedaka'];
         }else{
-            $br=0;
+            $br = 0;
         }
         
         if(isset($_GET['brojStupaca'])){
             $bs = $_GET['brojStupaca'];
         }else {
-            $bs=0;
+            $bs = 0;
         }
 
         // ukupan broj polja u tablici
