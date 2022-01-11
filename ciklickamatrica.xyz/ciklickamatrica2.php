@@ -48,7 +48,31 @@
 
     $matrica=[];
 
-    
+    while($p<=$bp){
+        for($j=moinr;$j<=$maxr;$j++){
+            $matrica[$maxr][$j]=$p++;
+        }
+
+        if($p>=$bp) break;
+
+        for($i=$maxs;$i>=$minr;$i--){
+            $matrica[$i][$minr]=$p++;
+        }
+
+        if($p>=$bp) break;
+
+        for($j=$maxr;$j>=$minr;$j--){
+            $matrica[$minr][$j]=$p--;
+        }
+
+        if($p>=$bp) break;
+
+        for($i=$mins;$i<=$maxs;$i++){
+            $matrica[$i][$maxs]=$p++;
+        }
+    }
+        
+
 
     ?>
     
