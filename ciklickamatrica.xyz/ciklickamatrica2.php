@@ -25,6 +25,31 @@
         $bs = 0;
     }
 
+    // definiranje veličine tablice/broja polja
+    $bp = $br * $bs;
+
+    // decrement vrijednosti kako bi se sačuvao niz
+
+    $br--;
+    $bs--;
+
+    // postavljanje koordinata matrice
+
+    $minr=0;
+    $mins=0;
+    $maxr=$br;
+    $maxs=$bs;
+
+    // brojač za ispis ćelija
+
+    $p = 1;
+
+    // kreiranje matrice
+
+    $matrica=[];
+
+    
+
     ?>
     
 </body>
