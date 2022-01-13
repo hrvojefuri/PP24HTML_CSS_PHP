@@ -15,7 +15,7 @@ if(!isset($_SESSION['autoriziran'])){
 </head>
 <body>
     
-    <a href="odjava.php" class="button">Odjavi se</a>
+    <a href="odjava.php" class="button success">Odjavi se</a>
 
     <?php include_once 'skripte.php'; ?>
 </body>

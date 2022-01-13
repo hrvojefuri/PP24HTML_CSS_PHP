@@ -10,11 +10,11 @@
       <div class="grid-x grid-padding-x">
         <div class="medium-6 cell">
           <label for="id">ID</label>
-          <input type="text" placeholder="ID">          
+            <input type="text" placeholder="ID" name="id">
+            <input type="submit" class="button success" value="Prijava">         
         </div>      
       </div>
-    </div>
-    <input type="submit" class="button success" value="Prijava">  
+    </div>      
   </form>
   
   <?php include_once 'skripte.php'; ?>
