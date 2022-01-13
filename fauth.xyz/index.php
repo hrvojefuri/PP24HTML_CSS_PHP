@@ -7,23 +7,17 @@
 
   <body>
 
-  <form action="autoriziraj.php">
+  <form action="autoriziraj.php" method="post">
   <div class="grid-container">
     <div class="grid-x grid-padding-x">
-      <div class="medium-12 cell">
-        <label>ID
+      <div class="medium-6 cell">
+        <label for="id">ID
           <input type="text" placeholder="ID">
         </label>
       </div>      
     </div>
   </div>
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="medium-12 cell">
-      <button class="submit success button">Prijava</button>
-      </div>      
-    </div>
-  </div>  
+  <input type="submit" class="button success" value="Prijava">  
 </form>
     
     <?php include_once 'skripte.php'; ?>
