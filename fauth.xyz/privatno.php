@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if(!isset($_POST['id'])){
+if(!isset($_SESSION['autoriziran'])){
     header('location: index.php');
     exit;
 }

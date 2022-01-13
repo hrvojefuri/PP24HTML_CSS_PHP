@@ -5,7 +5,7 @@ if(!isset($_POST['id'])){
     exit;
 }
 
-if($_POST['id']!='21'){
+if($_POST['id']!=21){
     header('location: index.php');
     exit;
 }
