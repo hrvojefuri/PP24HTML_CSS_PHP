@@ -9,8 +9,10 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="medium-6 cell">
-          <label for="id">ID</label>
-            <input type="text" placeholder="ID" name="id">
+          <label for="username">Username</label>
+            <input type="text" placeholder="Username" name="username">
+          <label for="password">Password</label>
+            <input type="text" placeholder="Password" name="password">
             <input type="submit" class="button success" value="Prijava">         
         </div>      
       </div>
