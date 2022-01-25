@@ -45,7 +45,7 @@ if(!isset($_POST['ime'])
             </form>
             <ul>
                 <?php foreach ($_SESSION['podaci'] as $p): ?>
-                    <li><?php echo 'Bok, moje ime je ' . $p['ime'] . ', prezime ' . $p['prezime'] ?></li>
+                    <li><?php echo 'Bok, moje ime je ' . $p['ime'] . ', a prezime ' . $p['prezime'] ?></li>
                 <?php endforeach; ?>
             </ul>
           </div>
