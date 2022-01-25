@@ -10,9 +10,9 @@
       <div class="grid-x grid-padding-x">
         <div class="medium-6 cell">
           <label for="username">Username</label>
-            <input type="text" placeholder="Username" name="username" id="username">
+            <input type="text" name="username" id="username">
           <label for="password">Password</label>
-            <input type="text" placeholder="Password" name="password" id="password">
+            <input type="text" name="password" id="password">
             <input type="submit" class="button success" value="Prijava">         
         </div>      
       </div>
