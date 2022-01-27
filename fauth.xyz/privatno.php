@@ -10,7 +10,7 @@ if(!isset($_SESSION['podaci'])){
     $_SESSION['podaci'] = [];
 }
 
-if(!isset($_POST['ime'])
+if(isset($_POST['ime'])
     && isset($_POST['prezime'])
     && count($_POST)===2){
         $_SESSION['podaci'][]=$_POST;
