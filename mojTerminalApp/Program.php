@@ -67,6 +67,17 @@ class Program
         }
     }
 
+    private function promjenaProizvoda()
+    {
+        for($i=0;$i<count($this->podaci);$i++){
+            echo ($i+1) . '. ' . $this->podaci[$i]->getIzvodac() . ': ' . $this->podaci[$i]->getNaziv() . PHP_EOL;
+        }
+        $mijenjam = Unos::ucitajInt('Odaberi redni broj za promjenu: ');
+        $this->podaci[$mijenjam-1]->setCijena(Unos::ucitajFloat('Unesi novu cijenu: '));
+        $this->podaci[$mijenjam-1]->setZaliha(Unos::ucitajString('Unesi novo stanje: '));
+        $this->izbornik();
+    }
+
     private function naslov()
 {
     echo '#######################' . PHP_EOL;
