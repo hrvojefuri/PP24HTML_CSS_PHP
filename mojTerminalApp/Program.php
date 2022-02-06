@@ -45,6 +45,22 @@ class Program
         }
     }
 
+    private function unosProizvoda()
+    {
+        $p = new Proizvod();
+        $p->setSifra(Unos::ucitajInt('Unesi šifru proizvoda: '));
+        $p->setZanr(Unos::ucitajString('Unesi žanr: '));
+        $p->setIzvodac(Unos::ucitajString('Unesi izvođača: '));
+        $p->setNaziv(Unos::ucitajString('Unesi naziv proizvoda: '));
+        $p->setCijena(Unos::ucitajFloat('Unesi cijenu proizvoda: '));
+        $p->setIzdavackaKuca(Unos::ucitajString('Unesi izdavačku kuću: '));
+        $p->setZaliha(Unos::ucitajInt('Unesi zalihu proizvoda: '));
+        $this->podaci[]=$p;
+        $this->izbornik();
+    }
+
+    
+
     private function naslov()
 {
     echo '#######################' . PHP_EOL;
