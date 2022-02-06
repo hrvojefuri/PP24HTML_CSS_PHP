@@ -59,7 +59,13 @@ class Program
         $this->izbornik();
     }
 
-    
+    private function pregledProizvoda()
+    {
+        foreach($this->podaci as $p){
+            echo $p->getIzvodac() . ': ' . $p->getNaziv() . ', cijena: ' . $p->getCijena() . PHP_EOL;
+            $this->izbornik();
+        }
+    }
 
     private function naslov()
 {
