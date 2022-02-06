@@ -78,11 +78,21 @@ class Program
         $this->izbornik();
     }
 
+    private function brisanjeProizvoda()
+    {
+        for($i=0;$i<count($this->podaci);$i++){
+            echo ($i+1) . '. ' . $this->podaci[$i]->getIzvodac() . ': ' . $this->podaci[$i]->getNaziv() . PHP_EOL;
+        }
+        $brisem = Unos::ucitajInt('Unesi redni broj za brisanje: ');
+        array_splice($this->podaci,$brisem-1,1);
+        $this->izbornik();
+    }
+
     private function naslov()
-{
+    {
     echo '#######################' . PHP_EOL;
     echo 'FuriousVortex Proizvodi' . PHP_EOL;
     echo '#######################' . PHP_EOL;
     $this->izbornik();
-}
+    }
 }
