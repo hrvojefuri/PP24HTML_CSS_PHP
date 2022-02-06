@@ -11,7 +11,7 @@ class Program
         $this->naslov();
     }
 
-    public function izbornik()
+    private function izbornik()
     {
         echo '1. Pregled proizvoda' . PHP_EOL;
         echo '2. Unos proizvoda' . PHP_EOL;
@@ -50,5 +50,6 @@ class Program
     echo '#######################' . PHP_EOL;
     echo 'FuriousVortex Proizvodi' . PHP_EOL;
     echo '#######################' . PHP_EOL;
+    $this->izbornik();
 }
 }
